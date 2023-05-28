@@ -6,7 +6,7 @@ import './index.scss';
 function App() {
   const [appUi, setAppUi] = useState({
     showOptions: false,
-    size: "0",
+    size: "-0",
     eyeDirection: "center",
     smile: "smile",
     sick: false,
@@ -24,6 +24,7 @@ function App() {
 
   return (
       <div className="app">
+        <a href='https://linkedin.com/in/tertiux44' target="_blank" rel='noreferrer'><i className='fa-brands fa-linkedin-in' /></a>
         <div className={`container ${appUi.showOptions && "show-options"} ${appUi.eyeDirection} ${appUi.smile} ${appUi.size === "1" && "normal"} ${appUi.size === "0" && "small"} ${appUi.size === "-2" && "smallest"} ${appUi.size === "-1" && "smaller"} ${appUi.size === "2" && "big"} ${appUi.size === "3" && "bigger"}`}>
           <Minion />
           <Controls appUi={appUi} changeAppUi={changeAppUi} />
