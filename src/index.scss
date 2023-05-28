@@ -58,8 +58,7 @@ $pupil-dark: #350600;
     
     @media screen and (max-width: 450px) {
       background-color: #fff4;
-      backdrop-filter: blur(10px);
-      
+      backdrop-filter: blur(5px);
     }
   }
 
@@ -74,12 +73,15 @@ $pupil-dark: #350600;
     background-size: cover;
 
     .open-controls{
+      backdrop-filter: blur(10px);
+      background-color: #fff8;
       width: 80px;
       height: 80px;
       border-radius: 50%;
       position: fixed;
       bottom: 50px;
       right: 50px;
+      z-index: 20;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -106,6 +108,7 @@ $pupil-dark: #350600;
     }
 
     .controls{
+      z-index: 100;
       transition: all 0.5s ease;
       transform: translateX(150%);
 
@@ -217,6 +220,7 @@ $pupil-dark: #350600;
 
       .open-controls{
         opacity: 0;
+        transform: rotate(360deg);
       }
     }
 
