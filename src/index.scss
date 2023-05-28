@@ -177,7 +177,12 @@ $pupil-dark: #350600;
 
         &:hover{
           border-radius: 15px;
-          transform: scale(1.1);
+          transform: scale(1.3);
+        }
+
+        &.hover{
+          border-radius: 15px !important;
+          transform: scale(1.1) !important;
         }
       }
 

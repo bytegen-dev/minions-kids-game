@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Minion from './Minion';
 import Controls from './components/Controls';
 import './index.scss';
@@ -21,6 +21,21 @@ function App() {
       sick: sick,
     })
   }
+
+  useEffect(()=>{
+    const buttons = document.querySelectorAll("button")
+    buttons.forEach((button)=>{
+      button.addEventListener("touchstart", ()=>{
+        button.classList.add("hover")
+      }, {passive: false})
+      button.addEventListener("touchend", ()=>{
+        button.classList.remove("hover")
+      }, {passive: false})
+    })
+    window.addEventListener("contextmenu", (event)=>{
+      event.preventDefault()
+    })
+  }, [])
 
   return (
       <div className="app">
