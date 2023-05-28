@@ -6,7 +6,7 @@ import './index.scss';
 function App() {
   const [appUi, setAppUi] = useState({
     showOptions: false,
-    size: "-0",
+    size: "0",
     eyeDirection: "center",
     smile: "smile",
     sick: false,
