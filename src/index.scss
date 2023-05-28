@@ -57,8 +57,14 @@ $pupil-dark: #350600;
     }
     
     @media screen and (max-width: 450px) {
-      background-color: #fff4;
-      backdrop-filter: blur(5px);
+      background-color: #fff3;
+      background-color: rgb(246, 93, 46);
+      color: #fff;
+      
+      &:hover{
+        opacity: 1;
+        background-color: purple;
+      }
     }
   }
 
