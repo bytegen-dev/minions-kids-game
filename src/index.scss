@@ -60,6 +60,7 @@ $pupil-dark: #350600;
       background-color: #fff3;
       background-color: rgb(246, 93, 46);
       color: #fff;
+      top: 20px;
       
       &:hover{
         opacity: 1;
@@ -124,8 +125,6 @@ $pupil-dark: #350600;
       position: fixed;
       right: 30px;
       bottom: 30px;
-      // width: 200px;
-      min-width: 300px;
       max-width: 400px;
       height: 200px;
       display: flex;
