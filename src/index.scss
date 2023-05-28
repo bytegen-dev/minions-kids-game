@@ -219,9 +219,9 @@ $pupil-dark: #350600;
           z-index: 2;
           bottom: 0;
           height: 36%;
-          border-top: 8px solid;
-          border-bottom: 15px solid;
-          border-color: #0f5e9d;
+          border-top: 8px solid #0f5e9d;
+          border-bottom: 15px solid #0f5e9d;
+          border-color: #0f5e9d !important;
         }
       }
 
